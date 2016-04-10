@@ -1,9 +1,3 @@
-
-<!--div class="x_content"><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
-    <canvas id="canvasRadar" height="307" width="615" style="width: 410px; height: 205px;"></canvas>
-</div-->
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Stride Health | Critical</title>
+    <title>Stride Health | Critical Patients</title>
 
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/fonts/css/font-awesome.min.css" rel="stylesheet">
@@ -39,175 +33,17 @@
 
     <div class="main_container">
 
-        <div class="col-md-3 left_col">
-            <div class="left_col scroll-view">
-
-                <div class="navbar nav_title" style="border: 0;">
-                    <a href="index" class="site_title"><i class="fa fa-heartbeat"></i> <span>Stride Health</span></a>
-                </div>
-                <div class="clearfix"></div>
-
-                <!-- menu prile quick info -->
-                <div class="profile">
-                    <div class="profile_pic">
-                        <img src="/images/img.jpg" alt="..." class="img-circle profile_img">
-                    </div>
-                    <div class="profile_info">
-                        <span>Welcome,</span>
-                        <h2>Dr. Jay Guan</h2>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-                <!-- /menu prile quick info -->
-
-                <br />
-
-                <!-- sidebar menu -->
-                <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-
-                    <div class="menu_section">
-
-                        <ul class="nav side-menu">
-                            <li><a><i class="fa fa-hospital-o"></i> Home <span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu" style="display: none">
-                                    <li>
-                                        <a href="index">Dashboard</a>
-                                    </li>
-                                    <li>
-                                        <a href="upcoming">Patient Database</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a><i class="fa fa-stethoscope"></i> Data Search <span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu" style="display: none">
-                                    <li><a href="upcoming">Upcoming</a>
-                                    </li>
-                                    <li><a href="critical">Critical</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- /sidebar menu -->
+        <% include header.ejs%>
 
 
-            </div>
-        </div>
 
-        <!-- top navigation -->
-        <div class="top_nav">
-
-            <div class="nav_menu">
-                <nav class="" role="navigation">
-                    <div class="nav toggle">
-                        <a id="menu_toggle"><i class="fa fa-bars"></i></a>
-                    </div>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="">
-                            <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                <img src="/images/img.jpg" alt="">Dr. Jay Guan
-                                <span class=" fa fa-angle-down"></span>
-                            </a>
-                            <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
-                                <li><a href="javascript:;">  Profile</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">
-                                        <span class="badge bg-red pull-right">50%</span>
-                                        <span>Settings</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">Help</a>
-                                </li>
-                                <li><a href="login"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li role="presentation" class="dropdown">
-                            <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
-                                <i class="fa fa-envelope-o"></i>
-                                <span class="badge bg-green">6</span>
-                            </a>
-                            <ul id="menu1" class="dropdown-menu list-unstyled msg_list animated fadeInDown" role="menu">
-                                <li>
-                                    <a>
-                      <span class="image">
-                                        <img src="/images/img.jpg" alt="Profile Image" />
-                                    </span>
-                      <span>
-                                        <span>John Smith</span>
-                      <span class="time">3 mins ago</span>
-                      </span>
-                      <span class="message">
-                                        Film festivals used to be do-or-die moments for movie makers. They were where...
-                                    </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>
-                      <span class="image">
-                                        <img src="/images/img.jpg" alt="Profile Image" />
-                                    </span>
-                      <span>
-                                        <span>John Smith</span>
-                      <span class="time">3 mins ago</span>
-                      </span>
-                      <span class="message">
-                                        Film festivals used to be do-or-die moments for movie makers. They were where...
-                                    </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>
-                      <span class="image">
-                                        <img src="/images/img.jpg" alt="Profile Image" />
-                                    </span>
-                      <span>
-                                        <span>John Smith</span>
-                      <span class="time">3 mins ago</span>
-                      </span>
-                      <span class="message">
-                                        Film festivals used to be do-or-die moments for movie makers. They were where...
-                                    </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>
-                      <span class="image">
-                                        <img src="/images/img.jpg" alt="Profile Image" />
-                                    </span>
-                      <span>
-                                        <span>John Smith</span>
-                      <span class="time">3 mins ago</span>
-                      </span>
-                      <span class="message">
-                                        Film festivals used to be do-or-die moments for movie makers. They were where...
-                                    </span>
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </li>
-
-                    </ul>
-                </nav>
-            </div>
-
-        </div>
-        <!-- /top navigation -->
 
         <!-- page content -->
         <div class="right_col" role="main">
             <div class="">
                 <div class="page-title">
                     <div class="title_left">
-                        <h3>
-                            Critical Patients
-                        </h3>
+                        <h3>Critical Patients</h3>
                     </div>
 
                     <div class="title_right">
@@ -225,42 +61,88 @@
 
                 <div class="row">
 
+                    <!-------------------------------------------------------------------------------------------------------------------->
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="x_panel">
                             <div class="x_title">
-                                <h2 >Jack Doe</h2>
+                                <h2 style="color:rgba(3, 88, 106, 0.70)">John Doe<small>|</small><small style="color:rgba(38, 185, 154, 0.7)">average reaction to Xylapande</small></h2>
                                 <ul class="nav navbar-right panel_toolbox">
                                 </ul>
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
-                                <canvas id="canvasRadar"></canvas>
+                                <canvas id="lineJohn"></canvas>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="x_panel">
                             <div class="x_title">
-                                <h2>John Smith</h2>
+                                <h2>Radar Chart <small>Sessions</small></h2>
                                 <ul class="nav navbar-right panel_toolbox">
                                 </ul>
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
-                                <canvas id="canvasRadar"></canvas>
+                                <canvas id="canvasBob"></canvas>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="x_panel">
                             <div class="x_title">
-                                <h2>Jim Johnson</h2>
+                                <h2 style="color:rgba(3, 88, 106, 0.70)">Dave Brown<small>|</small><small style="color:rgba(38, 185, 154, 0.7)">average reaction to Xylapande</small></h2>
                                 <ul class="nav navbar-right panel_toolbox">
                                 </ul>
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
-                                <canvas id="canvasRadar"></canvas>
+                                <canvas id="lineDave"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h2>Radar Chart <small>Sessions</small></h2>
+                                <ul class="nav navbar-right panel_toolbox">
+
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="x_content">
+                                <canvas id="canvasJJ"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h2 style="color:rgba(3, 88, 106, 0.70)">Cathy Smalls<small>|</small><small style="color:rgba(38, 185, 154, 0.7)">average reaction to Xylapande</small></h2>
+                                <ul class="nav navbar-right panel_toolbox">
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="x_content">
+                                <canvas id="lineCathy"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h2 style="color:rgba(3, 88, 106, 0.70)">Tom Sawyer<small>|</small><small style="color:rgba(38, 185, 154, 0.7)">average reaction to Xylapande</small></h2>
+                                <ul class="nav navbar-right panel_toolbox">
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="x_content">
+                                <canvas id="lineTom"></canvas>
                             </div>
                         </div>
                     </div>
@@ -269,13 +151,10 @@
                 <div class="clearfix"></div>
                 <br />
             </div>
-
+            <!--------------------------------------------------------------------------------------------------------------------->
             <!-- footer content -->
             <footer>
-                <div class="copyright-info">
-                    <p class="pull-right">Gentelella Alela! - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
-                    </p>
-                </div>
+
                 <div class="clearfix"></div>
             </footer>
             <!-- /footer content -->
@@ -285,6 +164,8 @@
     </div>
 
 </div>
+<!------------------------------------------------------>
+
 
 <div id="custom_notifications" class="custom-notifications dsp_none">
     <ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
@@ -301,6 +182,9 @@
 <script src="/js/icheck/icheck.min.js"></script>
 <script src="/js/custom.js"></script>
 <script src="/js/pace/pace.min.js"></script>
+<script src="/javascripts/jquery-2.2.3.min.js"></script>
+<script src="/javascripts/angular.min.js"></script>
+<script src="/javascripts/controller.js"></script>
 
 
 <script>
@@ -309,11 +193,11 @@
     };
 
     // Line chart
-    var ctx = document.getElementById("lineChart");
+    var ctx = document.getElementById("lineJohn");
     var lineChart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            labels: ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"],
             datasets: [{
                 label: "My First dataset",
                 backgroundColor: "rgba(38, 185, 154, 0.31)",
@@ -323,7 +207,7 @@
                 pointHoverBackgroundColor: "#fff",
                 pointHoverBorderColor: "rgba(220,220,220,1)",
                 pointBorderWidth: 1,
-                data: [31, 74, 6, 39, 20, 85, 7]
+                data: [56, 76, 72, 61, 56, 53, 51]
             }, {
                 label: "My Second dataset",
                 backgroundColor: "rgba(3, 88, 106, 0.3)",
@@ -333,77 +217,11 @@
                 pointHoverBackgroundColor: "#fff",
                 pointHoverBorderColor: "rgba(151,187,205,1)",
                 pointBorderWidth: 1,
-                data: [82, 23, 66, 9, 99, 4, 2]
+                data: [41, 70, 78, 52, 60, 32, 20]
             }]
         },
     });
-
-    // Bar chart
-    var ctx = document.getElementById("mybarChart");
-    var mybarChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ["January", "February", "March", "April", "May", "June", "July"],
-            datasets: [{
-                label: '# of Votes',
-                backgroundColor: "#26B99A",
-                data: [51, 30, 40, 28, 92, 50, 45]
-            }, {
-                label: '# of Votes',
-                backgroundColor: "#03586A",
-                data: [41, 56, 25, 48, 72, 34, 12]
-            }]
-        },
-
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero: true
-                    }
-                }]
-            }
-        }
-    });
-
-    // Doughnut chart
-    var ctx = document.getElementById("canvasDoughnut");
-    var data = {
-        labels: [
-            "Dark Grey",
-            "Purple Color",
-            "Gray Color",
-            "Green Color",
-            "Blue Color"
-        ],
-        datasets: [{
-            data: [120, 50, 140, 180, 100],
-            backgroundColor: [
-                "#455C73",
-                "#9B59B6",
-                "#BDC3C7",
-                "#26B99A",
-                "#3498DB"
-            ],
-            hoverBackgroundColor: [
-                "#34495E",
-                "#B370CF",
-                "#CFD4D8",
-                "#36CAAB",
-                "#49A9EA"
-            ]
-
-        }]
-    };
-
-    var canvasDoughnut = new Chart(ctx, {
-        type: 'doughnut',
-        tooltipFillColor: "rgba(51, 51, 51, 0.55)",
-        data: data
-    });
-
-    // Radar chart
-    var ctx = document.getElementById("canvasRadar");
+    var ctx = document.getElementById("canvasBob");
     var data = {
         labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
         datasets: [{
@@ -426,77 +244,126 @@
             data: [28, 48, 40, 19, 96, 27, 100]
         }]
     };
-
     var canvasRadar = new Chart(ctx, {
         type: 'radar',
         data: data,
     });
-
-    // Pie chart
-    var ctx = document.getElementById("pieChart");
+    var ctx = document.getElementById("lineTom");
+    var lineChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"],
+            datasets: [{
+                label: "My First dataset",
+                backgroundColor: "rgba(38, 185, 154, 0.31)",
+                borderColor: "rgba(38, 185, 154, 0.7)",
+                pointBorderColor: "rgba(38, 185, 154, 0.7)",
+                pointBackgroundColor: "rgba(38, 185, 154, 0.7)",
+                pointHoverBackgroundColor: "#fff",
+                pointHoverBorderColor: "rgba(220,220,220,1)",
+                pointBorderWidth: 1,
+                data: [56, 76, 72, 61, 56, 53, 51]
+            }, {
+                label: "My Second dataset",
+                backgroundColor: "rgba(3, 88, 106, 0.3)",
+                borderColor: "rgba(3, 88, 106, 0.70)",
+                pointBorderColor: "rgba(3, 88, 106, 0.70)",
+                pointBackgroundColor: "rgba(3, 88, 106, 0.70)",
+                pointHoverBackgroundColor: "#fff",
+                pointHoverBorderColor: "rgba(151,187,205,1)",
+                pointBorderWidth: 1,
+                data: [41, 70, 78, 52, 60, 32, 20]
+            }]
+        },
+    });
+    var ctx = document.getElementById("canvasJJ");
     var data = {
+        labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
         datasets: [{
-            data: [120, 50, 140, 180, 100],
-            backgroundColor: [
-                "#455C73",
-                "#9B59B6",
-                "#BDC3C7",
-                "#26B99A",
-                "#3498DB"
-            ],
-            label: 'My dataset' // for legend
-        }],
-        labels: [
-            "Dark Gray",
-            "Purple",
-            "Gray",
-            "Green",
-            "Blue"
-        ]
+            label: "My First dataset",
+            backgroundColor: "rgba(3, 88, 106, 0.2)",
+            borderColor: "rgba(3, 88, 106, 0.80)",
+            pointBorderColor: "rgba(3, 88, 106, 0.80)",
+            pointBackgroundColor: "rgba(3, 88, 106, 0.80)",
+            pointHoverBackgroundColor: "#fff",
+            pointHoverBorderColor: "rgba(220,220,220,1)",
+            data: [65, 59, 90, 81, 56, 55, 40]
+        }, {
+            label: "My Second dataset",
+            backgroundColor: "rgba(38, 185, 154, 0.2)",
+            borderColor: "rgba(38, 185, 154, 0.85)",
+            pointColor: "rgba(38, 185, 154, 0.85)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+            data: [28, 48, 40, 19, 96, 27, 100]
+        }]
     };
-
-    var pieChart = new Chart(ctx, {
+    var canvasRadar = new Chart(ctx, {
+        type: 'radar',
         data: data,
-        type: 'pie',
-        otpions: {
-            legend: false
-        }
+    });
+    var ctx = document.getElementById("lineDave");
+    var lineChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"],
+            datasets: [{
+                label: "My First dataset",
+                backgroundColor: "rgba(38, 185, 154, 0.31)",
+                borderColor: "rgba(38, 185, 154, 0.7)",
+                pointBorderColor: "rgba(38, 185, 154, 0.7)",
+                pointBackgroundColor: "rgba(38, 185, 154, 0.7)",
+                pointHoverBackgroundColor: "#fff",
+                pointHoverBorderColor: "rgba(220,220,220,1)",
+                pointBorderWidth: 1,
+                data: [56, 76, 72, 61, 56, 53, 51]
+            }, {
+                label: "My Second dataset",
+                backgroundColor: "rgba(3, 88, 106, 0.3)",
+                borderColor: "rgba(3, 88, 106, 0.70)",
+                pointBorderColor: "rgba(3, 88, 106, 0.70)",
+                pointBackgroundColor: "rgba(3, 88, 106, 0.70)",
+                pointHoverBackgroundColor: "#fff",
+                pointHoverBorderColor: "rgba(151,187,205,1)",
+                pointBorderWidth: 1,
+                data: [41, 70, 78, 52, 60, 32, 20]
+            }]
+        },
+    });
+    var ctx = document.getElementById("lineCathy");
+    var lineChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"],
+            datasets: [{
+                label: "My First dataset",
+                backgroundColor: "rgba(38, 185, 154, 0.31)",
+                borderColor: "rgba(38, 185, 154, 0.7)",
+                pointBorderColor: "rgba(38, 185, 154, 0.7)",
+                pointBackgroundColor: "rgba(38, 185, 154, 0.7)",
+                pointHoverBackgroundColor: "#fff",
+                pointHoverBorderColor: "rgba(220,220,220,1)",
+                pointBorderWidth: 1,
+                data: [56, 76, 72, 61, 56, 53, 51]
+            }, {
+                label: "My Second dataset",
+                backgroundColor: "rgba(3, 88, 106, 0.3)",
+                borderColor: "rgba(3, 88, 106, 0.70)",
+                pointBorderColor: "rgba(3, 88, 106, 0.70)",
+                pointBackgroundColor: "rgba(3, 88, 106, 0.70)",
+                pointHoverBackgroundColor: "#fff",
+                pointHoverBorderColor: "rgba(151,187,205,1)",
+                pointBorderWidth: 1,
+                data: [41, 70, 78, 52, 60, 32, 20]
+            }]
+        },
     });
 
-    // PolarArea chart
-    var ctx = document.getElementById("polarArea");
-    var data = {
-        datasets: [{
-            data: [120, 50, 140, 180, 100],
-            backgroundColor: [
-                "#455C73",
-                "#9B59B6",
-                "#BDC3C7",
-                "#26B99A",
-                "#3498DB"
-            ],
-            label: 'My dataset' // for legend
-        }],
-        labels: [
-            "Dark Gray",
-            "Purple",
-            "Gray",
-            "Green",
-            "Blue"
-        ]
-    };
 
-    var polarArea = new Chart(ctx, {
-        data: data,
-        type: 'polarArea',
-        options: {
-            scale: {
-                ticks: {
-                    beginAtZero: true
-                }
-            }
-        }
-    });
+    // Radar chart
+
+
 </script>
 
 </body>

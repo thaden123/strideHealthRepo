@@ -11,11 +11,18 @@ var critical = require('./routes/critical');
 var upcoming = require('./routes/upcoming');
 
 var app = express();
-
+var mongoClient = require("mongodb").MongoClient;
+mongoClient.connect("mongodb://localhost:27017/patientList",function(err,db){
+  if(!err){
+    console.log("We are connected");
+  }
+  db.collection('test', function(err,collection){});
+});
+app.use(bodyParser.json());
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-
+-==========
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
